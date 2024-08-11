@@ -31,3 +31,27 @@ autocmd({"BufWritePre"}, {
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
+
+-- Function to set theme based on file type
+function set_theme_for_filetype()
+  local filetype = vim.bo.filetype
+
+  if filetype == 'cpp' then
+    vim.cmd('colorscheme thematrix')
+  elseif filetype == 'javascript' then
+    vim.cmd('colorscheme tokyonight-moon')
+  elseif filetype == 'lua' then
+    vim.cmd('colorscheme tokyonight-day')
+  else
+    vim.cmd('colorscheme tokyonight')
+  end
+end
+
+-- Set theme on filetype change
+vim.cmd([[
+  augroup ThemeChange
+    autocmd!
+    autocmd FileType * lua set_theme_for_filetype()
+  augroup END
+]])
+
