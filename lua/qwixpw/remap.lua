@@ -21,10 +21,10 @@ end)
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
@@ -47,3 +47,23 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+vim.keymap.set('n', '<leader>L', ':set keymap=""<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>l', function()
+    if (not vim.g.my_lang) then
+        vim.o.keymap = "russian-jcukenwin"
+        vim.g.my_lang = true
+    else
+        vim.o.keymap = ""
+        vim.g.my_lang = false
+    end
+    print("My language: ", vim.g.my_lang)
+end, { noremap = true, silent = true })
+
+vim.keymap.set('n', '<leader>t', ':TransparentToggle<CR>', { noremap = true, silent = true })
+
+-- Codeium
+-- Change '<C-g>' here to any keycode you like.
+vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+vim.keymap.set('i', '<C-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
+vim.keymap.set('n', '<C-1>', ':CodeiumToggle<cr>', { expr = true, silent = true })
