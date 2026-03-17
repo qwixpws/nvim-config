@@ -54,11 +54,11 @@ function set_theme_for_filetype()
         vim.cmd("colorscheme thematrix")
     elseif filetype == "javascript" or filetype == "js" then
         vim.cmd("colorscheme sorbet")
-    elseif filetype == "typescript" then
+    elseif (filetype == "typescript" or filetype == "md") then
         vim.cmd("colorscheme tokyonight-moon")
     else
         -- Set a default colorscheme if the filetype doesn't match
-        vim.cmd("colorscheme slate")
+        vim.cmd("colorscheme tokyonight-storm")
     end
 
     -- Set transparent background

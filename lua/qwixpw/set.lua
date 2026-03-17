@@ -1,5 +1,7 @@
 vim.opt.guicursor = "n-v:block,i-ci:hor20,i:blinkon1"
 
+vim.g.codeium_enabled = false
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -29,4 +31,3 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "100"
-

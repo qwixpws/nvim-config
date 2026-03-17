@@ -114,6 +114,12 @@ _G.packer_plugins = {
     path = "/home/qwixp/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["codeium.vim"] = {
+    config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0" },
+    loaded = true,
+    path = "/home/qwixp/.local/share/nvim/site/pack/packer/start/codeium.vim",
+    url = "https://github.com/Exafunction/codeium.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/qwixp/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -186,7 +192,7 @@ _G.packer_plugins = {
     url = "https://github.com/rose-pine/neovim"
   },
   ["telescope.nvim"] = {
-    config = { "\27LJ\2\nï\1\0\0\6\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\rdefaults\1\0\1\rdefaults\0\16borderchars\1\0\1\16borderchars\0\fpreview\1\2\0\0\6 \fresults\1\2\0\0\6 \vprompt\1\0\3\fresults\0\vprompt\0\fpreview\0\1\t\0\0\bâ”€\6 \6 \6 \bâ”€\bâ”€\6 \6 \nsetup\14telescope\frequire\0" },
+    config = { "\27LJ\2\nï\1\0\0\6\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\rdefaults\1\0\1\rdefaults\0\16borderchars\1\0\1\16borderchars\0\fpreview\1\2\0\0\6 \fresults\1\2\0\0\6 \vprompt\1\0\3\vprompt\0\fresults\0\fpreview\0\1\t\0\0\bâ”€\6 \6 \6 \bâ”€\bâ”€\6 \6 \nsetup\14telescope\frequire\0" },
     loaded = true,
     path = "/home/qwixp/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
@@ -198,10 +204,16 @@ _G.packer_plugins = {
     url = "https://github.com/luisiacc/the-matrix.nvim"
   },
   ["tokyonight.nvim"] = {
-    config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0" },
+    config = { "\27LJ\2\n?\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0 colorscheme tokyonight-moon\bcmd\bvim\0" },
     loaded = true,
     path = "/home/qwixp/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["transparent.nvim"] = {
+    config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0¨\3\1\0\4\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\0023\3\b\0=\3\t\0022\0\0€D\0\2\0\ron_clear\0\19exclude_groups\17extra_groups\vgroups\1\0\4\ron_clear\0\vgroups\0\17extra_groups\0\19exclude_groups\0\1\26\0\0\vNormal\rNormalNC\fComment\rConstant\fSpecial\15Identifier\14Statement\fPreProc\tType\15Underlined\tTodo\vString\rFunction\16Conditional\vRepeat\rOperator\14Structure\vLineNr\fNonText\15SignColumn\15CursorLine\17CursorLineNr\15StatusLine\17StatusLineNC\16EndOfBuffer\nsetup\16transparent\frequire\0" },
+    loaded = true,
+    path = "/home/qwixp/.local/share/nvim/site/pack/packer/start/transparent.nvim",
+    url = "https://github.com/xiyaowong/transparent.nvim"
   },
   ["trouble.nvim"] = {
     config = { "\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0" },
@@ -227,22 +239,30 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: tokyonight.nvim
-time([[Config for tokyonight.nvim]], true)
-try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "tokyonight.nvim")
-time([[Config for tokyonight.nvim]], false)
+-- Config for: transparent.nvim
+time([[Config for transparent.nvim]], true)
+try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0¨\3\1\0\4\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\0023\3\b\0=\3\t\0022\0\0€D\0\2\0\ron_clear\0\19exclude_groups\17extra_groups\vgroups\1\0\4\ron_clear\0\vgroups\0\17extra_groups\0\19exclude_groups\0\1\26\0\0\vNormal\rNormalNC\fComment\rConstant\fSpecial\15Identifier\14Statement\fPreProc\tType\15Underlined\tTodo\vString\rFunction\16Conditional\vRepeat\rOperator\14Structure\vLineNr\fNonText\15SignColumn\15CursorLine\17CursorLineNr\15StatusLine\17StatusLineNC\16EndOfBuffer\nsetup\16transparent\frequire\0", "config", "transparent.nvim")
+time([[Config for transparent.nvim]], false)
+-- Config for: codeium.vim
+time([[Config for codeium.vim]], true)
+try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "codeium.vim")
+time([[Config for codeium.vim]], false)
+-- Config for: the-matrix.nvim
+time([[Config for the-matrix.nvim]], true)
+try_loadstring("\27LJ\2\nÅ\3\0\0\5\0\19\0&6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0026\1\3\0009\1\4\1)\2\0\0=\2\5\0016\1\3\0009\1\4\1)\2\1\0=\2\6\0016\1\3\0009\1\4\1'\2\b\0=\2\a\0016\1\3\0009\1\4\1'\2\n\0=\2\t\0016\1\3\0009\1\4\0015\2\15\0005\3\r\0009\4\f\0=\4\14\3=\3\16\2=\2\v\0016\1\3\0009\1\4\0014\2\0\0=\2\17\0016\1\3\0009\1\4\1)\2\1\0=\2\18\1K\0\1\0\30thematrix_telescope_theme\31thematrix_background_color\vNormal\1\0\1\vNormal\0\afg\1\0\3\afg\0\nstyle\14underline\abg\tNONE\15foreground\25thematrix_highlights\vitalic\28thematrix_keyword_style\tNONE\29thematrix_function_style\31thematrix_transparent_mode#thematrix_use_original_pallete\6g\bvim\vconfig\21thematrix.colors\frequire\0", "config", "the-matrix.nvim")
+time([[Config for the-matrix.nvim]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\nï\1\0\0\6\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\rdefaults\1\0\1\rdefaults\0\16borderchars\1\0\1\16borderchars\0\fpreview\1\2\0\0\6 \fresults\1\2\0\0\6 \vprompt\1\0\3\fresults\0\vprompt\0\fpreview\0\1\t\0\0\bâ”€\6 \6 \6 \bâ”€\bâ”€\6 \6 \nsetup\14telescope\frequire\0", "config", "telescope.nvim")
+try_loadstring("\27LJ\2\nï\1\0\0\6\0\14\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\f\0005\3\n\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\4=\4\v\3=\3\r\2B\0\2\1K\0\1\0\rdefaults\1\0\1\rdefaults\0\16borderchars\1\0\1\16borderchars\0\fpreview\1\2\0\0\6 \fresults\1\2\0\0\6 \vprompt\1\0\3\vprompt\0\fresults\0\fpreview\0\1\t\0\0\bâ”€\6 \6 \6 \bâ”€\bâ”€\6 \6 \nsetup\14telescope\frequire\0", "config", "telescope.nvim")
 time([[Config for telescope.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
--- Config for: the-matrix.nvim
-time([[Config for the-matrix.nvim]], true)
-try_loadstring("\27LJ\2\nÅ\3\0\0\5\0\19\0&6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0026\1\3\0009\1\4\1)\2\0\0=\2\5\0016\1\3\0009\1\4\1)\2\1\0=\2\6\0016\1\3\0009\1\4\1'\2\b\0=\2\a\0016\1\3\0009\1\4\1'\2\n\0=\2\t\0016\1\3\0009\1\4\0015\2\15\0005\3\r\0009\4\f\0=\4\14\3=\3\16\2=\2\v\0016\1\3\0009\1\4\0014\2\0\0=\2\17\0016\1\3\0009\1\4\1)\2\1\0=\2\18\1K\0\1\0\30thematrix_telescope_theme\31thematrix_background_color\vNormal\1\0\1\vNormal\0\afg\1\0\3\afg\0\nstyle\14underline\abg\tNONE\15foreground\25thematrix_highlights\vitalic\28thematrix_keyword_style\tNONE\29thematrix_function_style\31thematrix_transparent_mode#thematrix_use_original_pallete\6g\bvim\vconfig\21thematrix.colors\frequire\0", "config", "the-matrix.nvim")
-time([[Config for the-matrix.nvim]], false)
+-- Config for: tokyonight.nvim
+time([[Config for tokyonight.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0 colorscheme tokyonight-moon\bcmd\bvim\0", "config", "tokyonight.nvim")
+time([[Config for tokyonight.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "rose-pine")

@@ -1,0 +1,13 @@
+../
+./
+cloak.lua
+colors.lua
+fugitive.lua
+harpoon.lua
+lsp.lua
+refactoring.lua
+telescope.lua
+treesitter.lua
+trouble.lua
+undotree.lua
+zenmode.lua

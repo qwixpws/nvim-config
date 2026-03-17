@@ -57,7 +57,7 @@ vim.keymap.set('n', '<leader>l', function()
         vim.o.keymap = ""
         vim.g.my_lang = false
     end
-    print("My language: ", vim.g.my_lang)
+    print("Ru language: ", vim.g.my_lang)
 end, { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader>t', ':TransparentToggle<CR>', { noremap = true, silent = true })
@@ -66,4 +66,9 @@ vim.keymap.set('n', '<leader>t', ':TransparentToggle<CR>', { noremap = true, sil
 -- Change '<C-g>' here to any keycode you like.
 vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
 vim.keymap.set('i', '<C-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
-vim.keymap.set('n', '<C-1>', ':CodeiumToggle<cr>', { expr = true, silent = true })
+vim.keymap.set('i', '<M-.>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
+vim.keymap.set('i', '<M-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
+--vim.keymap.set('n', '<M-.>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+--vim.keymap.set('n', '<C-q>', ':CodeiumToggle<cr>', { expr = true, silent = true })
+
+vim.keymap.set('n', '<leader>ca', ':CellularAutomaton make_it_rain<CR>', { noremap = true, silent = true })
