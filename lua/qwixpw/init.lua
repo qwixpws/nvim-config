@@ -90,3 +90,6 @@ vim.cmd [[
 --autocmd FileType javascript colorscheme tokyonight-moon
 --augroup END
 --]])
+--
+-- Suppress the lspconfig deprecation warning
+-- vim.g.lspconfig_silent_deprecation = true
